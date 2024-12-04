@@ -1,0 +1,16 @@
+{
+  "fstar_exe": "fstar.exe",
+  "options": [
+    "--cache_dir",
+    "obj",
+    "--warn_error",
+    "+241@247+285",
+    "--already_cached",
+    "Prims FStar LowStar C TestLib"
+  ],
+  "include_dirs": [
+    "${KRML_HOME}/krmllib",
+    "$(FSTAR_HOME)",
+    "code/"
+  ]
+}

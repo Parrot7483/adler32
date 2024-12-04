@@ -5,7 +5,11 @@ let
   fstar = karamel.inputs.fstar.packages.${system}.fstar;
   krml = karamel.packages.${system}.default;
 in pkgs.mkShell {
-  buildInputs = [ fstar krml ];
+  buildInputs = [ 
+    fstar 
+    krml 
+    pkgs.compcert 
+  ];
   KRML_HOME = karamel.packages.${system}.karamel.home;
   FSTAR_HOME = fstar.out;
 }
